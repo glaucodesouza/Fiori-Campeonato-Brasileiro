@@ -64,21 +64,6 @@
                                     <Text text="10"></Text>
                                 </cells>
                             </ColumnListItem>
-                            <ColumnListItem > 
-                                <cells>
-                                    <Text text="2"></Text>
-                                    <Image src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/2029.png" width="50%"></Image>
-                                    <Text text="Palmeiras"></Text>
-                                    <Text text="16"></Text>
-                                    <Text text="8"></Text>
-                                    <Text text="4"></Text>
-                                    <Text text="4"></Text>
-                                    <Text text="0"></Text>
-                                    <Text text="17"></Text>
-                                    <Text text="7"></Text>
-                                    <Text text="10"></Text>
-                                </cells>
-                            </ColumnListItem>
                         </items>
 
                     </Table>

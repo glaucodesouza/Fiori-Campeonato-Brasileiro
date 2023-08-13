@@ -1,0 +1,95 @@
+<mvc:View controllerName="brasileirao.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <ObjectHeader 
+            title="Campeonato Brasileiro 2023 - FioriNet"
+            number="9a"
+            numberUnit="Rodada">
+        </ObjectHeader>
+        <IconTabBar >
+            <items>
+                <IconTabFilter 
+                    text="Classificação" 
+                    key="classificacao"
+                    icon="sap-icon://competitor">
+                    <!-- tabela -->
+                    <Table>
+                        <columns>
+                            <Column >
+                                <Text text="Posição"></Text>
+                            </Column>
+                            <Column >
+                                <Text text=""></Text>
+                            </Column>
+                            <Column >
+                                <Text text="Time"></Text>
+                            </Column>
+                            <Column >
+                                <Text text="Pt"></Text>
+                            </Column>
+                            <Column >
+                                <Text text="V"></Text>
+                            </Column>
+                            <Column >
+                                <Text text="E"></Text>
+                            </Column>
+                            <Column >
+                                <Text text="D"></Text>
+                            </Column>
+                            <Column >
+                                <Text text="GM"></Text>
+                            </Column>
+                            <Column >
+                                <Text text="GC"></Text>
+                            </Column>
+                            <Column >
+                                <Text text="SG"></Text>
+                            </Column>
+                        </columns>
+
+                        <items>
+                            <ColumnListItem >
+                                <cells>
+                                    <Text text="1"></Text>
+                                    <Image src="https://logodownload.org/wp-content/uploads/2016/11/botafogo-logo-0.png" width="50%"></Image>
+                                    <Text text="Botafogo"></Text>
+                                    <Text text="21"></Text>
+                                    <Text text="8"></Text>
+                                    <Text text="7"></Text>
+                                    <Text text="0"></Text>
+                                    <Text text="1"></Text>
+                                    <Text text="16"></Text>
+                                    <Text text="6"></Text>
+                                    <Text text="10"></Text>
+                                </cells>
+                            </ColumnListItem>
+                            <ColumnListItem >
+                                <cells>
+                                    <Text text="2"></Text>
+                                    <Image src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/2029.png" width="50%"></Image>
+                                    <Text text="Palmeiras"></Text>
+                                    <Text text="16"></Text>
+                                    <Text text="8"></Text>
+                                    <Text text="4"></Text>
+                                    <Text text="4"></Text>
+                                    <Text text="0"></Text>
+                                    <Text text="17"></Text>
+                                    <Text text="7"></Text>
+                                    <Text text="10"></Text>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+
+                    </Table>
+                </IconTabFilter>
+
+                <IconTabFilter 
+                    text="Partidas" 
+                    key="partidas"
+                    icon="sap-icon://soccer">
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+    </Page>
+</mvc:View>

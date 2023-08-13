@@ -64,7 +64,7 @@
                                     <Text text="10"></Text>
                                 </cells>
                             </ColumnListItem>
-                            <ColumnListItem >
+                            <ColumnListItem > 
                                 <cells>
                                     <Text text="2"></Text>
                                     <Image src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/2029.png" width="50%"></Image>

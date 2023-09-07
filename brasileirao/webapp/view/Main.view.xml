@@ -1,10 +1,13 @@
-<mvc:View controllerName="brasileirao.controller.Main"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+<mvc:View 
+    controllerName="brasileirao.controller.Main"
+    xmlns:c="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <ObjectHeader 
-            title="Campeonato Brasileiro 2023 - FioriNet"
-            number="9a"
+            title="{ModeloDadosGerais>/campeonato}"
+            number="{ModeloDadosGerais>/rodada}"
             numberUnit="Rodada">
         </ObjectHeader>
         <IconTabBar >
@@ -69,10 +72,15 @@
                     </Table>
                 </IconTabFilter>
 
-                <IconTabFilter 
-                    text="Partidas" 
-                    key="partidas"
-                    icon="sap-icon://soccer">
+                <IconTabFilter text="Partidas"
+                    icon="sap-icon://soccer"
+                    key="partidas">
+
+                    <!-- para funcionar colocar propriedade xmlns:c="sap.ui.core" dentro da tag
+                    view-->
+                    <!-- ver linha 3-->
+                    <c:Fragment fragmentName="brasileirao.view.partidas" type="XML" />
+
                 </IconTabFilter>
             </items>
         </IconTabBar>

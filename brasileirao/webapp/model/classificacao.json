@@ -1,4 +1,5 @@
-[
+{
+"Classificacao": [
   {
       "posicao": 1,
       "pontos": 51,
@@ -520,3 +521,5 @@
       ]
   }
 ]
+
+}

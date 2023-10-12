@@ -5,66 +5,92 @@
     displayBlock="true"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <ObjectHeader 
+        <ObjectHeader id="_IDGenObjectHeader1" 
             title="{ModeloDadosGerais>/campeonato}"
             number="{ModeloDadosGerais>/rodada}"
             numberUnit="Rodada">
         </ObjectHeader>
-        <IconTabBar >
+        <IconTabBar id="_IDGenIconTabBar1" >
             <items>
-                <IconTabFilter 
+                <IconTabFilter id="_IDGenIconTabFilter1" 
                     text="Classificação" 
                     key="classificacao"
                     icon="sap-icon://competitor">
                     <!-- tabela -->
-                    <Table>
+                    <Table id="_IDGenTable1" items="{ModeloClassificacao>/Classificacao}">
                         <columns>
-                            <Column >
-                                <Text text="Posição"></Text>
-                            </Column>
-                            <Column >
+                            <!-- posição -->
+                            <Column width="3%">
                                 <Text text=""></Text>
                             </Column>
-                            <Column >
+                            <!-- escudo -->
+                            <Column width="5%">
+                                <Text text=""></Text>
+                            </Column>
+                            <!-- time -->
+                            <Column width="auto">
                                 <Text text="Time"></Text>
                             </Column>
-                            <Column >
-                                <Text text="Pt"></Text>
+                            <!-- pontos -->
+                            <Column width="auto">
+                                <Text text="Pts"></Text>
                             </Column>
-                            <Column >
-                                <Text text="V"></Text>
+                            <!-- partidas jogadas -->
+                            <Column width="auto">
+                                <Text text="PJ"></Text>
                             </Column>
-                            <Column >
+                            <!-- vitórias -->
+                            <Column width="auto">
+                                <Text text="VIT"></Text>
+                            </Column>
+                            <!-- empates -->
+                            <Column width="auto">
                                 <Text text="E"></Text>
                             </Column>
-                            <Column >
-                                <Text text="D"></Text>
+                            <!-- derrotas -->
+                            <Column>
+                                <Text text="DER"></Text>
                             </Column>
-                            <Column >
+                            <!-- gols marcados -->
+                            <Column width="auto">
                                 <Text text="GM"></Text>
                             </Column>
-                            <Column >
+                            <!-- gol contra -->
+                            <Column width="auto">
                                 <Text text="GC"></Text>
                             </Column>
-                            <Column >
+                            <!-- saldo de gols -->
+                            <Column width="auto">
                                 <Text text="SG"></Text>
                             </Column>
                         </columns>
 
                         <items>
-                            <ColumnListItem >
+                            <ColumnListItem>
                                 <cells>
-                                    <Text text="1"></Text>
-                                    <Image src="https://logodownload.org/wp-content/uploads/2016/11/botafogo-logo-0.png" width="50%"></Image>
-                                    <Text text="Botafogo"></Text>
-                                    <Text text="21"></Text>
-                                    <Text text="8"></Text>
-                                    <Text text="7"></Text>
-                                    <Text text="0"></Text>
-                                    <Text text="1"></Text>
-                                    <Text text="16"></Text>
-                                    <Text text="6"></Text>
-                                    <Text text="10"></Text>
+                                    <!-- 1a coluna posição -->
+                                    <Text text="{ModeloClassificacao>posicao}"></Text>
+                                    <!-- 2a coluna escudo-->
+                                    <Image width="45%"
+                                        src="{ModeloClassificacao>time/escudo}"></Image>
+                                    <!-- 3a coluna time-->
+                                    <Text text="{ModeloClassificacao>time/nome_popular}"></Text>
+                                    <!-- 4a coluna pontos-->
+                                    <Text text="{ModeloClassificacao>pontos}"></Text>
+                                    <!-- 5a coluna jogos-->
+                                    <Text text="{ModeloClassificacao>pontos}"></Text>
+                                    <!-- 6a coluna vitorias-->
+                                    <Text text="{ModeloClassificacao>vitorias}"></Text>
+                                    <!-- 7a coluna empates -->
+                                    <Text text="{ModeloClassificacao>empates}"></Text>
+                                    <!-- 8a coluna derrotas-->
+                                    <Text text="{ModeloClassificacao>derrotas}"></Text>
+                                    <!-- 9a coluna gols pro -->
+                                    <Text text="{ModeloClassificacao>gols_pro}"></Text>
+                                    <!-- 10a coluna gc-->
+                                    <Text text="{ModeloClassificacao>gols_contra}"></Text>
+                                    <!-- 11a coluna saldo gols-->
+                                    <Text text="{ModeloClassificacao>saldo_gols}"></Text>
                                 </cells>
                             </ColumnListItem>
                         </items>
@@ -72,7 +98,7 @@
                     </Table>
                 </IconTabFilter>
 
-                <IconTabFilter text="Partidas"
+                <IconTabFilter id="_IDGenIconTabFilter2" text="Partidas"
                     icon="sap-icon://soccer"
                     key="partidas">
 

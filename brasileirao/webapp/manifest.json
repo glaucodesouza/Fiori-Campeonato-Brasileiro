@@ -74,9 +74,13 @@
         "preload": true,
         "settings": {}
       },
-      "ModeloPartidas": {
+      "ModeloPartidas2": {
         "type": "sap.ui.model.json.JSONModel",
         "uri":"model/partidas.json"
+      },
+      "ModeloClassificacao2": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri":"model/classificacao.json"
       }
     },
     "resources": {

@@ -77,10 +77,6 @@
       "ModeloPartidas": {
         "type": "sap.ui.model.json.JSONModel",
         "uri":"model/partidas.json"
-      },
-      "ModeloClassificacao": {
-        "type": "sap.ui.model.json.JSONModel",
-        "uri":"model/Classificacao.json"
       }
     },
     "resources": {

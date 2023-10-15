@@ -3,7 +3,7 @@
 	xmlns:c="sap.ui.core"
 >
 
-<Table id="partidasTable" headerText="9ª Rodada"
+<Table id="partidasTable" headerText="{ModeloDadosGerais>/rodada_atual/rodada} rodada"
     items="{ModeloPartidas>/partidas}"
     inset="false">
     <columns>

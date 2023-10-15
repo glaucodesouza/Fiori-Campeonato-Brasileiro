@@ -6,8 +6,8 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <ObjectHeader id="_IDGenObjectHeader1" 
-            title="{ModeloDadosGerais>/campeonato}"
-            number="{ModeloDadosGerais>/rodada}"
+            title="{ModeloDadosGerais>/nome_popular}"
+            number="{ModeloDadosGerais>/rodada_atual/rodada}"
             numberUnit="Rodada">
         </ObjectHeader>
         <IconTabBar id="_IDGenIconTabBar1" >
